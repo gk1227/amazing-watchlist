@@ -26,7 +26,7 @@ export class TvmazeService {
           });
           return shows;
         })
-      );
+    );
   }
 
   getShowWithEps(sid: string): Observable<{show: Show, episodes: Array<Episode>}> {

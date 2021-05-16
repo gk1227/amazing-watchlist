@@ -23,8 +23,8 @@ export class ShowDetailsComponent implements OnInit {
     this.route.params.subscribe((p) => {
       this.sid = p.id;
       this.tvService.getShowWithEps(this.sid).subscribe(results => {
-          this.show = results.show;
-          this.episodes = new MatTableDataSource(results.episodes);
+        this.show = results.show;
+        this.episodes = new MatTableDataSource(results.episodes);
         }
       );
     });
